@@ -77,9 +77,9 @@
   "skill5_2": { "image": "images/siegemastery", "max": 5, "tooltip": "Siege Mastery. Unit durability damage increases by 100 (based on level)" },
   "skill5_3": { "image": "images/buildinginspiration.png", "max": 3, "tooltip": "Building Inspiration. Unit durability damage increases by 100 (based on level)" }, 
   
-  "skill1_1": { "image": "images/rapidproduction.png", "max": 5, "tooltip": "Rapid Production. Use it to immediately gain 4 hours (based on level) of production from in-base Food, Iron and Coin buildings, cooldown 24 hours." }
+  "skill1_1": { "image": "images/rapidproduction.png", "max": 5, "tooltip": "Rapid Production. Use it to immediately gain 4 hours (based on level) of production from in-base Food, Iron and Coin buildings, cooldown 24 hours." },
   "skill1_2": { "image": "images/outstandingcontribution.png", "max": 1, "tooltip": "Outstanding Contribution. Donating Tech helps increase the number of Alliance Contribution points earned (without affecting Contribution Score)." },
-  "skill1_3": { "image": "images/combatexperience.png", "max": 3, "tooltip": "Combat Experience. Increased Profession EXP from killing monsters on World Map. Level 1: 20%, Level 2: 40%, Level 3: 60%" },
+  "skill1_3": { "image": "images/combatexperience.png", "max": 3, "tooltip": "Combat Experience. Increased Profession EXP from killing monsters on World Map. Level 1: 20%, Level 2: 40%, Level 3: 60%" }
 
   
 }
