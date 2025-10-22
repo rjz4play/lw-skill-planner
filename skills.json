@@ -74,7 +74,7 @@
   "skill10_3": { "image": "images/doubleexchange.png", "max": 3, "tooltip": "Double Exchange. Exchange two types of seasonal resources ad 1:2 ration, consuming 15.000 (based on level) and gaining 30.000 (based on level), with a cooldown of 48 hours. Levels: Level 1: 5.000, Level 2: 15.000, Level 3: 25.000" },
   
   "skill5_1": { "image": "images/extrameal.png", "max": 1, "tooltip": "Extra Meal. The effect of Daily Freebie for stamina has been improved." },
-  "skill5_2": { "image": "images/siegemastery", "max": 5, "tooltip": "Siege Mastery. Unit durability damage increases by 100 (based on level)" },
+  "skill5_2": { "image": "images/siegemastery.png", "max": 5, "tooltip": "Siege Mastery. Unit durability damage increases by 100 (based on level)" },
   "skill5_3": { "image": "images/buildinginspiration.png", "max": 3, "tooltip": "Building Inspiration. Unit durability damage increases by 100 (based on level)" }, 
   
   "skill1_1": { "image": "images/rapidproduction.png", "max": 5, "tooltip": "Rapid Production. Use it to immediately gain 4 hours (based on level) of production from in-base Food, Iron and Coin buildings, cooldown 24 hours." },
@@ -83,3 +83,4 @@
 
   
 }
+
