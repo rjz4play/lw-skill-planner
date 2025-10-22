@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>War Leader Skills Planner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="table-container">
+			<div class="header">
+				<a href="index.html" class="role-link">ENGINEER</a>
+				<a href="warleader.html" class="role-link">WAR LEADER</a>
+			
+				<h1>War Leader Skills Planner</h1>
+				<div class="controls">
+					Skill Points: <input type="text" id="skill_total">
+					<input type="button" onclick="lock()" value="SET" id="btn_set">
+					<input type="button" onclick="reset()" value="RESET"><br><br>
+				</div>
+			</div>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Level 100</td>
+                        <td>
+							<div class="icon-container"><img src="images/E100-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill100_1')">-</button>
+							<span id="skill100_1" class="btn">0</span>
+							<button onclick="add('skill100_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E100-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill100_2')">-</button>
+							<span id="skill100_2" class="btn">0</span>
+							<button onclick="add('skill100_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 95</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E95-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill95_1')">-</button>
+							<span id="skill95_1" class="btn">0</span>
+							<button onclick="add('skill95_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E95-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill95_2')">-</button>
+							<span id="skill95_2" class="btn">0</span>
+							<button onclick="add('skill95_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Level 90</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E90-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill90_1')">-</button>
+							<span id="skill90_1" class="btn">0</span>
+							<button onclick="add('skill90_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E90-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill90_2')">-</button>
+							<span id="skill90_2" class="btn">0</span>
+							<button onclick="add('skill90_2', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E90-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill90_3')">-</button>
+							<span id="skill90_3" class="btn">0</span>
+							<button onclick="add('skill90_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 85</td>
+                        <td>
+							<div class="icon-container"><img src="images/E85-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill85_1')">-</button>
+							<span id="skill85_1" class="btn">0</span>
+							<button onclick="add('skill85_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E85-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill85_2')">-</button>
+							<span id="skill85_2" class="btn">0</span>
+							<button onclick="add('skill85_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E85-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill85_3')">-</button>
+							<span id="skill85_3" class="btn">0</span>
+							<button onclick="add('skill85_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 80</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E80-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill80_1')">-</button>
+							<span id="skill80_1" class="btn">0</span>
+							<button onclick="add('skill80_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E80-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill80_2')">-</button>
+							<span id="skill80_2" class="btn">0</span>
+							<button onclick="add('skill80_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E80-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill80_3')">-</button>
+							<span id="skill80_3" class="btn">0</span>
+							<button onclick="add('skill80_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Level 75</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E75-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill75_1')">-</button>
+							<span id="skill75_1" class="btn">0</span>
+							<button onclick="add('skill75_1', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E75-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill75_2')">-</button>
+							<span id="skill75_2" class="btn">0</span>
+							<button onclick="add('skill75_2', 3)">+</button>
+                            <span>/3</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E75-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill75_3')">-</button>
+							<span id="skill75_3" class="btn">0</span>
+							<button onclick="add('skill75_3', 3)">+</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 70</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E70-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill70_1')">-</button>
+							<span id="skill70_1" class="btn">0</span>
+							<button onclick="add('skill70_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E70-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill70_2')">-</button>
+							<span id="skill70_2" class="btn">0</span>
+							<button onclick="add('skill70_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E70-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill70_3')">-</button>
+							<span id="skill70_3" class="btn">0</span>
+							<button onclick="add('skill70_3', 3)">+</button>
+                            <span>/3</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 65</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E65-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill65_1')">-</button>
+							<span id="skill65_1" class="btn">0</span>
+							<button onclick="add('skill65_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E65-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill65_2')">-</button>
+							<span id="skill65_2" class="btn">0</span>
+							<button onclick="add('skill65_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E65-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill65_3')">-</button>
+							<span id="skill65_3" class="btn">0</span>
+							<button onclick="add('skill65_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 60</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E60-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill60_1')">-</button>
+							<span id="skill60_1" class="btn">0</span>
+							<button onclick="add('skill60_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E60-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill60_2')">-</button>
+							<span id="skill60_2" class="btn">0</span>
+							<button onclick="add('skill60_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E60-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill60_3')">-</button>
+							<span id="skill60_3" class="btn">0</span>
+							<button onclick="add('skill60_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 55</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E55-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill55_1')">-</button>
+							<span id="skill55_1" class="btn">0</span>
+							<button onclick="add('skill55_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E55-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill55_2')">-</button>
+							<span id="skill55_2" class="btn">0</span>
+							<button onclick="add('skill55_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E55-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill55_3')">-</button>
+							<span id="skill55_3" class="btn">0</span>
+							<button onclick="add('skill55_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 50</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E50-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill50_1')">-</button>
+							<span id="skill50_1" class="btn">0</span>
+							<button onclick="add('skill50_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E50-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill50_2')">-</button>
+							<span id="skill50_2" class="btn">0</span>
+							<button onclick="add('skill50_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E50-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill50_3')">-</button>
+							<span id="skill50_3" class="btn">0</span>
+							<button onclick="add('skill50_3', 3)">+</button>
+                            <span>/3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Level 45</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E45-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill45_1')">-</button>
+							<span id="skill45_1" class="btn">0</span>
+							<button onclick="add('skill45_1', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                           <div class="icon-container"><img src="images/E45-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill45_2')">-</button>
+							<span id="skill45_2" class="btn">0</span>
+							<button onclick="add('skill45_2', 5)">+</button>
+                            <span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E45-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill45_3')">-</button>
+							<span id="skill45_3" class="btn">0</span>
+							<button onclick="add('skill45_3', 1)">+</button>
+                            <span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 40</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E40-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill40_1')">-</button>
+							<span id="skill40_1" class="btn">0</span>
+							<button onclick="add('skill40_1', 5)">+</button>
+                            <span>/5</span>  
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E40-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill40_2')">-</button>
+							<span id="skill40_2" class="btn">0</span>
+							<button onclick="add('skill40_2', 3)">+</button>
+							<span>/3</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E40-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill40_3')">-</button>
+							<span id="skill40_3" class="btn">0</span>
+							<button onclick="add('skill40_3', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 35</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E35-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill35_1')">-</button>
+							<span id="skill35_1" class="btn">0</span>
+							<button onclick="add('skill35_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E35-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill35_2')">-</button>
+							<span id="skill35_2" class="btn">0</span>
+							<button onclick="add('skill35_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E35-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill35_3')">-</button>
+							<span id="skill35_3" class="btn">0</span>
+							<button onclick="add('skill35_3', 1)">+</button>
+							<span>/1</span>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 30</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E30-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill30_1')">-</button>
+							<span id="skill30_1" class="btn">0</span>
+							<button onclick="add('skill30_1', 2)">+</button>
+							<span>/2</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E30-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill30_2')">-</button>
+							<span id="skill30_2" class="btn">0</span>
+							<button onclick="add('skill30_2', 2)">+</button>
+							<span>/2</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E30-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill30_3')">-</button>
+							<span id="skill30_3" class="btn">0</span>
+							<button onclick="add('skill30_3', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 25</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E25-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill25_1')">-</button>
+							<span id="skill25_1" class="btn">0</span>
+							<button onclick="add('skill25_1', 3)">+</button>
+							<span>/3</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E25-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill25_2')">-</button>
+							<span id="skill25_2" class="btn">0</span>
+							<button onclick="add('skill25_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E25-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill25_3')">-</button>
+							<span id="skill25_3" class="btn">0</span>
+							<button onclick="add('skill25_3', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 20</td>
+                        <td>
+							<div class="icon-container"><img src="images/E20-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill20_1')">-</button>
+							<span id="skill20_1" class="btn">0</span>
+							<button onclick="add('skill20_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E20-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill20_2')">-</button>
+							<span id="skill20_2" class="btn">0</span>
+							<button onclick="add('skill20_2', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E20-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill20_3')">-</button>
+							<span id="skill20_3" class="btn">0</span>
+							<button onclick="add('skill20_3', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 15</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E15-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill15_1')">-</button>
+							<span id="skill15_1" class="btn">0</span>
+							<button onclick="add('skill15_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E15-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill15_2')">-</button>
+							<span id="skill15_2" class="btn">0</span>
+							<button onclick="add('skill15_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E15-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill15_3')">-</button>
+							<span id="skill15_3" class="btn">0</span>
+							<button onclick="add('skill15_3', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 10</td>
+                        <td>
+							<div class="icon-container"><img src="images/E10-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill10_1')">-</button>
+							<span id="skill10_1" class="btn">0</span>
+							<button onclick="add('skill10_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E10-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill10_2')">-</button>
+							<span id="skill10_2" class="btn">0</span>
+							<button onclick="add('skill10_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                           <div class="icon-container"><img src="images/E10-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill10_3')">-</button>
+							<span id="skill10_3" class="btn">0</span>
+							<button onclick="add('skill10_3', 3)">+</button>
+							<span>/3</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Level 5</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E5-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill5_1')">-</button>
+							<span id="skill5_1" class="btn">0</span>
+							<button onclick="add('skill5_1', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E5-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill5_2')">-</button>
+							<span id="skill5_2" class="btn">0</span>
+							<button onclick="add('skill5_2', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+							<div class="icon-container"><img src="images/E5-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill5_3')">-</button>
+							<span id="skill5_3" class="btn">0</span>
+							<button onclick="add('skill5_3', 3)">+</button>
+							<span>/3</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Level 1</td>
+                        <td>
+                            <div class="icon-container"><img src="images/E1-1.png" alt="Skill 1"></div>
+							<button onclick="subtract('skill1_1')">-</button>
+							<span id="skill1_1" class="btn">0</span>
+							<button onclick="add('skill1_1', 5)">+</button>
+							<span>/5</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E1-2.png" alt="Skill 2"></div>
+							<button onclick="subtract('skill1_2')">-</button>
+							<span id="skill1_2" class="btn">0</span>
+							<button onclick="add('skill1_2', 1)">+</button>
+							<span>/1</span>
+                        </td>
+                        <td>
+                            <div class="icon-container"><img src="images/E1-3.png" alt="Skill 3"></div>
+							<button onclick="subtract('skill1_3')">-</button>
+							<span id="skill1_3" class="btn">0</span>
+							<button onclick="add('skill1_3', 3)">+</button>
+							<span>/3</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			<script src="script.js"></script>
+        </div>
+    </body>
+</html>

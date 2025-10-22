@@ -54,3 +54,39 @@ function reset() {
     const btnSet = document.getElementById('btn_set');
     btnSet.value = "SET";
 }
+function populateTableFromJSON(data) {
+  Object.keys(data).forEach(skillId => {
+    const td = document.querySelector(`td[data-skill='${skillId}']`);
+    if (!td) return;
+
+    const skill = data[skillId];
+    const img = td.querySelector("img");
+    const maxSpan = td.querySelector(".max");
+    const valueSpan = td.querySelector("span.btn");
+    const addBtn = td.querySelector("button[onclick^='add']");
+
+    // Set image src and tooltip
+    img.src = skill.image;
+    img.alt = skillId;
+    img.title = skill.tooltip;
+
+    // Set max value
+    if (maxSpan) maxSpan.textContent = `/${skill.max}`;
+
+    // Reset value to 0
+    if (valueSpan) valueSpan.textContent = 0;
+
+    // Update add button max
+    if (addBtn) addBtn.setAttribute("onclick", `add('${skillId}', ${skill.max})`);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Fetch the JSON file instead of assuming skillData exists
+  fetch('skills.json') // <-- make sure this path points to your JSON file
+    .then(response => response.json())
+    .then(skillData => {
+      populateTableFromJSON(skillData);
+    })
+    .catch(err => console.error("Error loading skillData:", err));
+});
