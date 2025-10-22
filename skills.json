@@ -62,7 +62,7 @@
   "skill25_3": { "image": "images/tradedisc.png", "max": 5, "tooltip": "Trade Discount. Enjoy extra discounts when purchasing items from Trade Posts." },
   
   "skill20_1": { "image": "images/rallyrush.png", "max": 5, "tooltip": "Rally Rush. Joining or returning with rallies boosts troop marching speed" },
-  "skill20_2": { "image": "images/siegebanner", "max": 1, "tooltip": "Siege Banner. Set up “Siege Banner” on an empty tile. Increases the Durability Damage of allies whose bases are within the banner’s range by 100 , lasting 30 minute, cooldown 71.5 hr (stack up to 5 times)." },
+  "skill20_2": { "image": "images/siegebanner.png", "max": 1, "tooltip": "Siege Banner. Set up “Siege Banner” on an empty tile. Increases the Durability Damage of allies whose bases are within the banner’s range by 100 , lasting 30 minute, cooldown 71.5 hr (stack up to 5 times)." },
   "skill20_3": { "image": "images/profinsights.png", "max": 1, "tooltip": "Professional Insights. Use to instantly gain 2% (up to 10%) of your current level’s Profession EXP, up to a maximum of 100,000, with a cooldown of 23.5 hours." },
   
   "skill15_1": { "image": "images/buildnow.png", "max": 5, "tooltip": "Build Now. Use it to immediately reduce all Construction Queue time by 120 minutes (based on level), cooldown 48 hours." },
@@ -83,4 +83,5 @@
 
   
 }
+
 
