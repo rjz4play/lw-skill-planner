@@ -8,9 +8,9 @@
   "skill90_1": { "image": "images/willinghelper.png", "max": 5, "tooltip": "Willing Helper. When helping allies, you earn an extra 50 Alliance Contribution Points (does not affect contribution rankings). Daily limit: 4 times (up to 20)." },
   "skill90_2": { "image": "images/enhancedsiegebanner.png", "max": 1, "tooltip": "Enhance Siege Banner. Upgrade the Siege Banner to gain an additional +10% rally and march speed {unlocks at Siege Banner max level), lasts 30 minutes, cooldown 71.5 hours (stacks up to 5 times)." },
   
-  "skill85_1": { "image": "images/speedupbox.png", "max": 5, "tooltip": "Speedup Box. It grands 1 (up to 5) random speedup item(s). Cooldown: 23.5" },
+  "skill85_1": { "image": "images/speedupbox.png", "max": 5, "tooltip": "Speedup Box. It grants 1 (up to 5) random speedup item(s). Cooldown: 23.5" },
   "skill85_2": { "image": "images/emergencycapacity.png", "max": 5, "tooltip": "Emergency Capacity. Increase the capacity limit of the Emergency Center." },
-  "skill85_3": { "image": "images/summonmummies.png", "max": 1, "tooltip": "Summon Mummies. Target an unshielded enemy commander to summon a mummy boss near your base. The boss will march to attack the target for 30 minutes, cooldown 71.5 hours." },
+  "skill85_3": { "image": "images/mummies.png", "max": 1, "tooltip": "Summon Mummies. Target an unshielded enemy commander to summon a mummy boss near your base. The boss will march to attack the target for 30 minutes, cooldown 71.5 hours." },
   
   
   "skill80_1": { "image": "images/truckexpansion.png", "max": 5, "tooltip": "Truck Expansion. Increases the amount of Iron, Food, and Coins carried by the Truck by +5 % (up to )." },
