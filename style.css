@@ -1,4 +1,4 @@
-/* General Page Setup */
+/* === General Page Setup === */
 html, body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f8f9fa;
@@ -6,12 +6,15 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
+  padding-top: 80px; /* keeps content visible below the fixed header */
 }
 
-/* Header Section */
+/* === Header Section === */
 .header {
-  position: sticky;
+  position: fixed; /* keeps it docked at the top */
   top: 0;
+  left: 0;
+  width: 100%;
   background-color: #2c3e50;
   color: #fff;
   text-align: center;
@@ -25,14 +28,14 @@ html, body {
   font-size: 1.75rem;
 }
 
-/* Controls Section */
+/* === Controls Section === */
 .controls {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .controls input[type="text"] {
@@ -46,8 +49,8 @@ html, body {
 
 /* When skill points input is locked (disabled) */
 .controls input[type="text"]:disabled {
-  background-color: #d6d8db; /* darker gray than default #e9ecef */
-  color: #495057; /* readable dark text */
+  background-color: #d6d8db; /* darker gray than default */
+  color: #495057;
   border-color: #adb5bd;
   cursor: not-allowed;
 }
@@ -66,12 +69,12 @@ html, body {
   background-color: #0b5ed7;
 }
 
-/* Table Container */
+/* === Table Container === */
 .table-container {
   width: 100%;
   max-width: 1000px;
   margin: 2rem auto;
-  padding: 0; /* removes inner spacing */
+  padding: 0;
 }
 
 .table-container table {
@@ -84,7 +87,6 @@ html, body {
   margin: 0 auto;
 }
 
-/* Table Alignment */
 .table-container th,
 .table-container td {
   padding: 0.75rem;
@@ -99,7 +101,7 @@ html, body {
   white-space: nowrap;
 }
 
-/* Skill Icons */
+/* === Skill Icons === */
 .icon-container img {
   width: 64px;
   height: 64px;
@@ -113,7 +115,7 @@ html, body {
   transform: scale(1.1);
 }
 
-/* Increment/Decrement Buttons */
+/* === Increment/Decrement Buttons === */
 button.skill-btn {
   background-color: #e9ecef;
   border: 1px solid #adb5bd;
@@ -129,7 +131,7 @@ button.skill-btn:hover {
   background-color: #dee2e6;
 }
 
-/* Bootstrap Override: remove left/right space globally */
+/* === Bootstrap Override: remove left/right space globally === */
 .container,
 .container-fluid {
   padding-left: 0 !important;
@@ -138,7 +140,7 @@ button.skill-btn:hover {
   margin-right: 0 !important;
 }
 
-/* Responsive Table Alignment */
+/* === Responsive Table Alignment === */
 @media (max-width: 768px) {
   .table-container {
     padding: 0;

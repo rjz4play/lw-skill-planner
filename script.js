@@ -94,4 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(response => response.json())
     .then(skillData => populateTableFromJSON(skillData))
     .catch(err => console.error("Error loading skillData:", err));
+	
+	const level1Row = document.querySelector('[data-level="1"]');
+      if (level1Row) {
+        // Give it a short delay to ensure rendering completes
+        setTimeout(() => {
+          level1Row.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 500);
+      }
+    })
+    .catch(err => console.error("Error loading skillData:", err));
 });
+
+
