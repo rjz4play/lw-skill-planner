@@ -1,9 +1,11 @@
 /* General Page Setup */
-body {
+html, body {
   font-family: 'Segoe UI', Arial, sans-serif;
   background-color: #f8f9fa;
   margin: 0;
   padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Header Section */
@@ -58,9 +60,10 @@ body {
 
 /* Table Container */
 .table-container {
-  max-width: 900px;
+  width: 100%;
+  max-width: 1000px;
   margin: 2rem auto;
-  padding: 0 1rem;
+  padding: 0; /* removes inner spacing */
 }
 
 .table-container table {
@@ -70,8 +73,10 @@ body {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
+/* Table Alignment */
 .table-container th,
 .table-container td {
   padding: 0.75rem;
@@ -83,6 +88,7 @@ body {
 .table-container td:first-child {
   font-weight: 600;
   color: #2c3e50;
+  white-space: nowrap;
 }
 
 /* Skill Icons */
@@ -104,4 +110,48 @@ button.skill-btn {
   background-color: #e9ecef;
   border: 1px solid #adb5bd;
   border-radius: 0.25rem;
-  cursor: poin
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+button.skill-btn:hover {
+  background-color: #dee2e6;
+}
+
+/* Bootstrap Override: remove left/right space globally */
+.container,
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Responsive Table Alignment */
+@media (max-width: 768px) {
+  .table-container {
+    padding: 0;
+    margin: 1rem auto;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls input[type="text"],
+  .controls input[type="button"] {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .table-container table {
+    font-size: 0.9rem;
+  }
+}

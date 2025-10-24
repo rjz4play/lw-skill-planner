@@ -1,59 +1,65 @@
 function add(buttonId, maxValue) {
-    const button = document.getElementById(buttonId);
-    const skillTotal = document.getElementById('skill_total');
+  const button = document.getElementById(buttonId);
+  const skillTotal = document.getElementById("skill_total");
 
-    let currentSkillTotal = Number(skillTotal.value);
-    let currentValue = Number(button.innerText) || 0;
+  let currentSkillTotal = Number(skillTotal.value);
+  let currentValue = Number(button.innerText) || 0;
 
-    if (currentSkillTotal <= 0) return; // cannot add if no points left
-    if (currentValue < maxValue) {
-        button.innerText = currentValue + 1;
-        skillTotal.value = currentSkillTotal - 1;
-    }
+  if (currentSkillTotal <= 0) return; // cannot add if no points left
+  if (currentValue < maxValue) {
+    button.innerText = currentValue + 1;
+    skillTotal.value = currentSkillTotal - 1;
+  }
 }
 
 function subtract(buttonId) {
-    const button = document.getElementById(buttonId);
-    const skillTotal = document.getElementById('skill_total');
+  const button = document.getElementById(buttonId);
+  const skillTotal = document.getElementById("skill_total");
 
-    let currentValue = Number(button.innerText) || 0;
+  let currentValue = Number(button.innerText) || 0;
 
-    if (currentValue > 0) {
-        button.innerText = currentValue - 1;
-        skillTotal.value = Number(skillTotal.value) + 1;
-    }
+  if (currentValue > 0) {
+    button.innerText = currentValue - 1;
+    skillTotal.value = Number(skillTotal.value) + 1;
+  }
 }
 
 function lock() {
-    const skillTotal = document.getElementById('skill_total');
-    const btnSet = document.getElementById('btn_set');
+  const skillTotal = document.getElementById("skill_total");
+  const btnSet = document.getElementById("btn_set");
 
-    if (btnSet.value === "SET") {
-        if (!skillTotal.value || Number(skillTotal.value) <= 0) {
-            alert("Enter a valid total skill points first!");
-            return;
-        }
-        skillTotal.disabled = true;
-        btnSet.value = "UNLOCK";
-    } else {
-        skillTotal.disabled = false;
-        btnSet.value = "SET";
+  if (btnSet.value === "SET") {
+    if (!skillTotal.value || Number(skillTotal.value) <= 0) {
+      alert("Enter a valid total skill points first!");
+      return;
     }
+    skillTotal.disabled = true;
+    btnSet.value = "UNLOCK";
+    btnSet.innerText = "UNLOCK";
+  } else {
+    skillTotal.disabled = false;
+    btnSet.value = "SET";
+    btnSet.innerText = "SET";
+  }
 }
 
 function reset() {
-    // reset all skill values
-    document.querySelectorAll(".btn").forEach(button => button.innerText = "0");
+  // ✅ Reset only numeric skill counters (not the control buttons)
+  document.querySelectorAll("span[id^='skill']").forEach(span => {
+    span.innerText = "0";
+  });
 
-    // reset total skill points
-    const skillTotal = document.getElementById('skill_total');
-    skillTotal.value = "0";
-    skillTotal.disabled = false;
+  // ✅ Reset total skill points
+  const skillTotal = document.getElementById("skill_total");
+  skillTotal.value = "0";
+  skillTotal.disabled = false;
 
-    // reset set/unlock button
-    const btnSet = document.getElementById('btn_set');
-    btnSet.value = "SET";
+  // ✅ Restore Set button text
+  const btnSet = document.getElementById("btn_set");
+  btnSet.value = "SET";
+  btnSet.innerText = "SET";
 }
+
 function populateTableFromJSON(data) {
   Object.keys(data).forEach(skillId => {
     const td = document.querySelector(`td[data-skill='${skillId}']`);
@@ -66,14 +72,16 @@ function populateTableFromJSON(data) {
     const addBtn = td.querySelector("button[onclick^='add']");
 
     // Set image src and tooltip
-    img.src = skill.image;
-    img.alt = skillId;
-    img.title = skill.tooltip;
+    if (img) {
+      img.src = skill.image;
+      img.alt = skillId;
+      img.title = skill.tooltip;
+    }
 
     // Set max value
     if (maxSpan) maxSpan.textContent = `/${skill.max}`;
 
-    // Reset value to 0
+    // Reset displayed value
     if (valueSpan) valueSpan.textContent = 0;
 
     // Update add button max
@@ -81,29 +89,9 @@ function populateTableFromJSON(data) {
   });
 }
 
-function reset() {
-  // Reset only skill value buttons (the ones showing the current points)
-  document.querySelectorAll("span[id^='skill']").forEach(span => {
-    span.innerText = "0";
-  });
-
-  // Reset total skill points
-  const skillTotal = document.getElementById('skill_total');
-  skillTotal.value = "0";
-  skillTotal.disabled = false;
-
-  // Reset SET/UNLOCK button text
-  const btnSet = document.getElementById('btn_set');
-  btnSet.value = "SET";
-  btnSet.innerText = "SET";
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-  // Fetch the JSON file instead of assuming skillData exists
-  fetch('skills.json') // <-- make sure this path points to your JSON file
+  fetch("skills.json")
     .then(response => response.json())
-    .then(skillData => {
-      populateTableFromJSON(skillData);
-    })
+    .then(skillData => populateTableFromJSON(skillData))
     .catch(err => console.error("Error loading skillData:", err));
 });
