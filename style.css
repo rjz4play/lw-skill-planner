@@ -7,6 +7,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   padding-top: 80px; /* keeps content visible below the fixed header */
+  padding-bottom: 60px; /* space for footer so content is not covered */
 }
 
 /* === Header Section === */
@@ -47,9 +48,8 @@ html, body {
   font-size: 1rem;
 }
 
-/* When skill points input is locked (disabled) */
 .controls input[type="text"]:disabled {
-  background-color: #d6d8db; /* darker gray than default */
+  background-color: #d6d8db; /* darker gray when disabled */
   color: #495057;
   border-color: #adb5bd;
   cursor: not-allowed;
@@ -161,11 +161,10 @@ button.skill-btn:hover {
     max-width: 200px;
   }
 
-  .table-container table {
-    font-size: 0.9rem;
-  }
+
 }
-/* Docked Footer */
+
+/* === Docked Footer === */
 .footer {
   position: fixed;
   bottom: 0;
@@ -178,9 +177,4 @@ button.skill-btn:hover {
   font-size: 0.9rem;
   box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
   z-index: 999;
-}
-
-/* Add bottom spacing so footer doesn't cover content */
-body {
-  padding-bottom: 60px; /* Adjust if footer height changes */
 }

@@ -96,6 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
       populateTableFromJSON(skillData);
 
       // ✅ Scroll to Level 1 after JSON and layout are loaded
+	  
       const level1Row = document.querySelector('[data-level="1"]');
       if (level1Row) {
         setTimeout(() => {
