@@ -81,6 +81,23 @@ function populateTableFromJSON(data) {
   });
 }
 
+function reset() {
+  // Reset only skill value buttons (the ones showing the current points)
+  document.querySelectorAll("span[id^='skill']").forEach(span => {
+    span.innerText = "0";
+  });
+
+  // Reset total skill points
+  const skillTotal = document.getElementById('skill_total');
+  skillTotal.value = "0";
+  skillTotal.disabled = false;
+
+  // Reset SET/UNLOCK button text
+  const btnSet = document.getElementById('btn_set');
+  btnSet.value = "SET";
+  btnSet.innerText = "SET";
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   // Fetch the JSON file instead of assuming skillData exists
   fetch('skills.json') // <-- make sure this path points to your JSON file
