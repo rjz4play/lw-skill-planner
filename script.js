@@ -92,12 +92,12 @@ function populateTableFromJSON(data) {
 document.addEventListener("DOMContentLoaded", () => {
   fetch("skills.json")
     .then(response => response.json())
-    .then(skillData => populateTableFromJSON(skillData))
-    .catch(err => console.error("Error loading skillData:", err));
-	
-	const level1Row = document.querySelector('[data-level="1"]');
+    .then(skillData => {
+      populateTableFromJSON(skillData);
+
+      // ✅ Scroll to Level 1 after JSON and layout are loaded
+      const level1Row = document.querySelector('[data-level="1"]');
       if (level1Row) {
-        // Give it a short delay to ensure rendering completes
         setTimeout(() => {
           level1Row.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }, 500);
@@ -105,5 +105,3 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Error loading skillData:", err));
 });
-
-
