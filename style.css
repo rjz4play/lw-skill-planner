@@ -71,7 +71,7 @@ html, body {
 
 /* === Table Container === */
 .table-container {
-  width: 100%;
+  width: 90%;
   max-width: 1000px;
   margin: 2rem auto;
   padding: 0;
