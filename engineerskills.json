@@ -1,0 +1,85 @@
+{
+  "skill100_1": { "image": "images/engineer/onemoretime.png", "max": 5, "tooltip": "One More Time. So whenever you use a skill that has a hexagon-shaped icon, it can happen that a message like this appears, and it will instantly reset the cooldown of the corresponding skill." },
+  "skill100_2": { "image": "images/engineer/blast.png", "max": 5, "tooltip": "Blast. Use it on your base to activate War Fever mode, triggering a 60-second Blast countdown. The blast will damage nearby 3 base tiles, reducing their durability by 25%, Cooldown: 71.5 hours." },
+  
+  "skill95_1": { "image": "images/engineer/coopconstruct2.png", "max": 5, "tooltip": "Cooperative Construction II. Cooperative Construction Upgrade: Each level adds +5% construction speed boost (unlocks at Cooperative Construction max level), lasts 60 minutes, cooldown: 23,5 hours" },
+  "skill95_2": { "image": "images/engineer/coopresearch2.png", "max": 5, "tooltip": "Cooperative Research II. Cooperative Research Upgrade: Each level adds +5% research speed boost (unlocks at Cooperative Research max level), lasts 60 minutes, cooldown: 23,5 hours" },
+  
+  "skill90_1": { "image": "images/engineer/willinghelper.png", "max": 5, "tooltip": "Willing Helper. When helping allies, you earn an extra 50 Alliance Contribution Points (does not affect contribution rankings). Daily limit: 4 times (up to 20)." },
+  "skill90_2": { "image": "images/enhancedsiegebanner.png", "max": 1, "tooltip": "Enhance Siege Banner. Upgrade the Siege Banner to gain an additional +10% rally and march speed {unlocks at Siege Banner max level), lasts 30 minutes, cooldown 71.5 hours (stacks up to 5 times)." },
+  
+  "skill85_1": { "image": "images/engineer/speedupbox.png", "max": 5, "tooltip": "Speedup Box. It grants 1 (up to 5) random speedup item(s). Cooldown: 23.5" },
+  "skill85_2": { "image": "images/engineer/emergencycapacity.png", "max": 5, "tooltip": "Emergency Capacity. Increase the capacity limit of the Emergency Center." },
+  "skill85_3": { "image": "images/seasonal/mummies.png", "max": 1, "tooltip": "Summon Mummies. Target an unshielded enemy commander to summon a mummy boss near your base. The boss will march to attack the target for 30 minutes, cooldown 71.5 hours." },
+  
+  
+  "skill80_1": { "image": "images/engineer/truckexpansion.png", "max": 5, "tooltip": "Truck Expansion. Increases the amount of Iron, Food, and Coins carried by the Truck by +5 % (up to )." },
+  "skill80_2": { "image": "images/engineer/helpinghand.png", "max": 5, "tooltip": "Helping Hand. Increases the number of helps received by +1 (up to +5)" },
+  "skill80_3": { "image": "images/seasonal/onisummon.png", "max": 1, "tooltip": "Oni Summon. Duration: 5 minutes. While active, the Blood Night Oni Legion can be attracted to follow your troops. Should they lose their target, they’ll turn on the brightest nearby base. Defeat the Blood Night Oni Legion to earn rewards. Cooldown 47.5 hour(s) (unaffected by the One More Time skill)." },
+  
+  "skill75_1": { "image": "images/engineer/winwin.png", "max": 1, "tooltip": "Win-win Cooperation. Can only be used on the War Leader: Reduces their construction and tech research costs by 5% for 24 hours. Earn 1 rewards. Cooldown: 23.5 hours." },
+  "skill75_2": { "image": "images/engineer/freetp.png", "max": 3, "tooltip": "Free Teleport. Gain one free Advanced Teleport chanceevery 71.5 hours, up to 1 (up to 3) stored at a time." },
+  "skill75_3": { "image": "images/seasonal/disruptionmine.png", "max": 3, "tooltip": "Disruption Mine. You can deploy a [Disruption Mine] in empty tiles of the original warzone: If triggered by an enemy, they can’t turn on the light for 3 minutes. The mine remains active for 24 hour and has a cooldown of 23.5 hours." },
+  
+  "skill70_1": { "image": "images/engineer/instantgathering.png", "max": 5, "tooltip": "Instant Gathering. When used, all squads currently gathering at iron mines, farmland, or gold mines will immediately collect the remaining resources from the gathering tile and return (cannot exceed the squad’s load capacity). Cooldown: 119.5 hours (down to 23.5 hours). Only usable in your home warzone." },
+  "skill70_2": { "image": "images/engineer/monstertracking.png", "max": 5, "tooltip": "Monster Tracking. Marching speed against monsters +5 % (up to 25 %)" },
+  "skill70_3": { "image": "images/seasonal/lightfall.png", "max": 3, "tooltip": "Lightfall. Once the enemy base is breached, their lighthouse will be extinguished and cannot be relight for the next 3 minute(s)." },
+  
+  "skill65_1": { "image": "images/engineer/cleanup.png", "max": 5, "tooltip": "Battlefield Cleanup. After defeating Ironhead, Glutton, Miser, and Doom Elites, the gain for Coin, Food, and Iron +2%" },
+  "skill65_2": { "image": "images/engineer/masterbuilder.png", "max": 5, "tooltip": "Master Builder. Building speedup +5 % (up to +25 %)" },
+  "skill65_3": { "image": "images/seasonal/flare.png", "max": 1, "tooltip": "Flare. Use to illuminate a 9-tile radius with L1 Light (can reveal Mini Maneki-neko) for 5 minute(s). Effects do not stack. Cooldown: 47.5 hour(s)." },
+  
+  "skill60_1": { "image": "images/efficientgathering.png", "max": 5, "tooltip": "Efficient Gathering. Gathering speed +5 % (up to 25 % )" },
+  "skill60_2": { "image": "images/firstaidexpert.png", "max": 5, "tooltip": "First Aid Expert. When defeated, the proportion entering the Emergency Center +1%" },
+  "skill60_3": { "image": "images/seasonal/elecrally.png", "max": 1, "tooltip": "Electrician Rally Call. Use to send an Electrician Rally Message to your alliance. Allies can quickly assist with electricians. Lasts for 10 minute(s). Cooldown: 23.5 hour(s)." },
+  
+  "skill55_1": { "image": "images/engineer/onemore.png", "max": 5, "tooltip": "One More. The daily task points chest has a 5% (up to 25%) chance to double your rewards." },
+  "skill55_2": { "image": "images/engineer/supportboost.png", "max": 5, "tooltip": "Support Boost. Time helped per action +30 seconds ( up to 150 seconds)" },
+  "skill55_3": { "image": "images/seasonal/huntinginspiration.png", "max": 1, "tooltip": "Hunting Inspiration. After becoming a Blood Night Hunter, earn 30000 Profession EXP for each Blood Night Hunter you eliminate, up to a maximum of 5 per round (unaffected by the One More Time skill)." },
+  
+  "skill50_1": { "image": "images/engineer/randomvisitors.png", "max": 5, "tooltip": "Random Visitors. Get 1 random survivor. 119.5 hours (down to 23.5 hours) cooldown" },
+  "skill50_2": { "image": "images/engineer/durability.png", "max": 5, "tooltip": "Durability Mine. Deploy a [Durability Landmine] in the original Warzone. When triggered, it lowers the target’s durability by 500 points, At max level, it can ignite the enemy base. The mine lasts 24-hour, cooldown 72 hours. You can store up to 2." },
+  "skill50_3": { "image": "images/seasonal/bnhteleport.png", "max": 3, "tooltip": "Blood Night Hunter Teleport. After becoming a Blood Night Hunter, you gain one [Hunter Teleport] count every 60 second(s) (unaffected by the One More Time skill)." },
+  
+  "skill45_1": { "image": "images/engineer/dronesupply.png", "max": 5, "tooltip": "Drone Supply. Use this item to get a level 1 Engineer skill reward (better rewards at higher levels). Cooldown: 23.5-hour." },
+  "skill45_2": { "image": "images/engineer/fearless.png", "max": 5, "tooltip": "Fearless Defense. When defending the base, a proportion of the attacking units will be killed based on the level and number of your fallen units +1% (up to 5%)" },
+  "skill45_3": { "image": "images/seasonal/bloodnighthunter.png", "max": 1, "tooltip": "Blood Night Hunter. After Blood Night Descends, you can use it to become a Blood Night Hunter (week 2 with the appropriate event), gaining exclusive Buffs, until eliminated or the event ends, with a cooldown of 71.5 hour(s) (unaffected by the One More Time Skill)." },
+  
+  "skill40_1": { "image": "images/engineer/medicalaid.png", "max": 5, "tooltip": "Medical Aid. Choose an Ally to use. After use, both yours and their Hospital’s Capacity increase by 10% (up to), lasting for 240 minutes, cooldown 71.5 hours (effects do not stack)" },
+  "skill40_2": { "image": "images/engineer/buddyshield.png", "max": 3, "tooltip": "Buddy Shield. Activate a shield for 1 (up to 4) hours for yourself or an ally, with a 71.5-hour cooldown (effects do not stack)" },
+  "skill40_3": { "image": "images/seasonal/shrinkingspell.png", "max": 1, "tooltip": "Shrinking Spell. When Desert Protectors defeat an enemy base, they reduce the visual size of the target base by 10% stacking up to 5 times." },
+  
+  "skill35_1": { "image": "images/engineer/rsssaving.png", "max": 5, "tooltip": "Resource Saving. Reduce resources cost for building construction." },
+  "skill35_2": { "image": "images/engineer/recycling.png", "max": 5, "tooltip": "Recycling. Reduce resources cost for research" },
+  "skill35_3": { "image": "images/seasonal/fragilespell.png", "max": 1, "tooltip": "Fragile Spell. When Desert Protectors defeat an enemy base, they reduce the target base’s max durability by 1,000 (up to 5000)" },
+  
+  "skill30_1": { "image": "images/engineer/coopconstruct.png", "max": 2, "tooltip": "Cooperative Construction. Boost building speed by 10% (up to 20%) for both you and a selected ally for 60 minutes, with a 23.5-hour cooldown (effects do not stack)." },
+  "skill30_2": { "image": "images/engineer/coopresearch.png", "max": 2, "tooltip": "Cooperative Research. Boost research speed by 10% (up to 20%) for both you and a selected ally for 60 minutes, with a 23.5-hour cooldown (effects do not stack)" },
+  "skill30_3": { "image": "images/seasonal/topupexp.png", "max": 5, "tooltip": "Top Up EXP. After the electrician powers up the units in the world and returns home, they will earn additional Profession EXP equal to the charging power * 1. The daily limit is 100k profession exp points." },
+  
+  "skill25_1": { "image": "images/engineer/siegeinsp.png", "max": 3, "tooltip": "Siege Inspiration. Increased Profession EXP from damaging City Durability" },
+  "skill25_2": { "image": "images/engineer/friendlyaid.png", "max": 5, "tooltip": "Friendly Aid. When reinforcing an ally’s base, the casualty rate of the Drill Ground’s units decreases (not stackable)" },
+  "skill25_3": { "image": "images/seasonal/tradedisc.png", "max": 5, "tooltip": "Trade Discount. Enjoy extra discounts when purchasing items from Trade Posts." },
+  
+  "skill20_1": { "image": "images/engineer/rallyrush.png", "max": 5, "tooltip": "Rally Rush. Joining or returning with rallies boosts troop marching speed" },
+  "skill20_2": { "image": "images/engineer/siegebanner.png", "max": 1, "tooltip": "Siege Banner. Set up “Siege Banner” on an empty tile. Increases the Durability Damage of allies whose bases are within the banner’s range by 100 , lasting 30 minute, cooldown 71.5 hr (stack up to 5 times)." },
+  "skill20_3": { "image": "images/seasonal/profinsights.png", "max": 1, "tooltip": "Professional Insights. Use to instantly gain 2% (up to 10%) of your current level’s Profession EXP, up to a maximum of 100,000, with a cooldown of 23.5 hours." },
+  
+  "skill15_1": { "image": "images/engineer/buildnow.png", "max": 5, "tooltip": "Build Now. Use it to immediately reduce all Construction Queue time by 120 minutes (based on level), cooldown 48 hours." },
+  "skill15_2": { "image": "images/engineer/researchnow.png", "max": 5, "tooltip": "Research Now. Use it to immediately reduce all Research Queue time by 120 minutes (based on level), cooldown 48 hours" },
+  "skill15_3": { "image": "images/seasonal/contaminatedteleport.png", "max": 1, "tooltip": "Contaminated Land Teleport. Gain a free Contaminated Land Teleport every 47.5 hours without consuming items, up to 1 stored at a time." },
+  
+  "skill10_1": { "image": "images/engineer/buildforfree.png", "max": 5, "tooltip": "Build for Free. Increase free speed-up time for Constructions. Levels: Level 1: 48, Level 2: 96, Level 3:144, Level 4: 192, Level 5: 240" },
+  "skill10_2": { "image": "images/engineer/researchforfree.png", "max": 5, "tooltip": "Research for Free. Increase free speed-up time for research. Levels: Level 1: 48, Level 2: 96, Level 3:144, Level 4: 192, Level 5: 240" },
+  "skill10_3": { "image": "images/seasonal/doubleexchange.png", "max": 3, "tooltip": "Double Exchange. Exchange two types of seasonal resources ad 1:2 ration, consuming 15.000 (based on level) and gaining 30.000 (based on level), with a cooldown of 48 hours. Levels: Level 1: 5.000, Level 2: 15.000, Level 3: 25.000" },
+  
+  "skill5_1": { "image": "images/engineer/extrameal.png", "max": 1, "tooltip": "Extra Meal. The effect of Daily Freebie for stamina has been improved." },
+  "skill5_2": { "image": "images/engineer/siegemastery.png", "max": 5, "tooltip": "Siege Mastery. Unit durability damage increases by 100 (based on level)" },
+  "skill5_3": { "image": "images/seasonal/buildinginspiration.png", "max": 3, "tooltip": "Building Inspiration. Unit durability damage increases by 100 (based on level)" }, 
+  
+  "skill1_1": { "image": "images/engineer/rapidproduction.png", "max": 5, "tooltip": "Rapid Production. Use it to immediately gain 4 hours (based on level) of production from in-base Food, Iron and Coin buildings, cooldown 24 hours." },
+  "skill1_2": { "image": "images/engineer/outstandingcontribution.png", "max": 1, "tooltip": "Outstanding Contribution. Donating Tech helps increase the number of Alliance Contribution points earned (without affecting Contribution Score)." },
+  "skill1_3": { "image": "images/seasonal/combatexperience.png", "max": 3, "tooltip": "Combat Experience. Increased Profession EXP from killing monsters on World Map. Level 1: 20%, Level 2: 40%, Level 3: 60%" }
+
+  
+}

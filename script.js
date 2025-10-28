@@ -44,17 +44,14 @@ function lock() {
 }
 
 function reset() {
-  // ✅ Reset only numeric skill counters (not the control buttons)
   document.querySelectorAll("span[id^='skill']").forEach(span => {
     span.innerText = "0";
   });
 
-  // ✅ Reset total skill points
   const skillTotal = document.getElementById("skill_total");
   skillTotal.value = "0";
   skillTotal.disabled = false;
 
-  // ✅ Restore Set button text
   const btnSet = document.getElementById("btn_set");
   btnSet.value = "SET";
   btnSet.innerText = "SET";
@@ -71,32 +68,42 @@ function populateTableFromJSON(data) {
     const valueSpan = td.querySelector("span.btn");
     const addBtn = td.querySelector("button[onclick^='add']");
 
-    // Set image src and tooltip
     if (img) {
       img.src = skill.image;
       img.alt = skillId;
       img.title = skill.tooltip;
     }
 
-    // Set max value
     if (maxSpan) maxSpan.textContent = `/${skill.max}`;
-
-    // Reset displayed value
     if (valueSpan) valueSpan.textContent = 0;
-
-    // Update add button max
     if (addBtn) addBtn.setAttribute("onclick", `add('${skillId}', ${skill.max})`);
   });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("skills.json")
+  // 🔍 Detect current page name
+  const path = window.location.pathname;
+  const page = path.split("/").pop() || "index.html";
+  let jsonFile = "";
+
+  // 🧠 Determine which JSON to load
+  if (page === "index.html" || page.includes("engineer")) {
+    jsonFile = "engineerskills.json";
+    console.log("✅ Loaded Engineer Skills JSON");
+  } else if (page.includes("warleader")) {
+    jsonFile = "warleaderskills.json";
+    console.log("✅ Loaded Warleader Skills JSON");
+  } else {
+    console.error("❌ Unknown page: cannot determine which JSON to load.", path);
+    return;
+  }
+
+  // 📥 Fetch correct JSON file
+  fetch(jsonFile)
     .then(response => response.json())
     .then(skillData => {
       populateTableFromJSON(skillData);
 
-      // ✅ Scroll to Level 1 after JSON and layout are loaded
-	  
       const level1Row = document.querySelector('[data-level="1"]');
       if (level1Row) {
         setTimeout(() => {
